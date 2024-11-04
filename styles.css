@@ -1,0 +1,175 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #857643;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px; /* Ajusta según el tamaño de tu logo */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.categorias {
+    position: relative;
+}
+
+.dropdown {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-toggle {
+    display: none; /* Oculta el checkbox */
+}
+
+.dropdown-content {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-toggle:checked + .dropdown-content {
+    display: block; /* Muestra el menú cuando se selecciona el checkbox */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}
+
+.favoritos, .carrito {
+    margin-left: 20px;
+}
+
+.favoritos img, .carrito img {
+    height: 30px; /* Ajusta según el tamaño de tus íconos */
+}
+
+
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    background-image: url('banner.png'); /* Reemplaza con el nombre de tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.banner h2 {
+    font-size: 2.5em; /* Tamaño del texto del título */
+    animation: fadeIn 2s ease-in-out;
+}
+
+.cta {
+    font-size: 1.5em; /* Tamaño del texto de llamada a la acción */
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgba(255, 0, 0, 0.7); /* Fondo semitransparente */
+    border-radius: 5px;
+    display: inline-block;
+    animation: bounce 2s infinite;
+    cursor: pointer; /* Indica que se puede hacer clic */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Producto */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f1f1f1; /* Fondo claro para diferenciar la sección */
+}
+
+.producto {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    background-color: #fff; /* Fondo blanco para los productos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Esquinas redondeadas para las imágenes */
+}
+
+.producto h3 {
+    font-size: 1.2em; /* Tamaño del título del producto */
+}
+
+.producto p {
+    margin: 5px 0; /* Espaciado entre párrafos */
+}
+
+.producto button {
+    padding: 10px;
+    background-color: #4CAF50; /* Color verde para el botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el ratón */
+}

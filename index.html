@@ -1,49 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Reto 03</title>
-    </head>
-    <body>
-        <header>
-            <img src="LogoVG.png" alt="Logo" class="logo">
-
-            <label for="toggle-menu" class="Menu"></label>
-            <nav id="navegacion" class="navegacion">
-                <ul class="Menu">
-                    <li>
-                        <a href="#">
-                            <img src="icono 1.png" alt="inicio" class="opcion">
-                            Inicio
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">
-                            <img src="icono 2.png" alt="Servicios"
-                                class="opcion">
-                            Servicios
-                        </a>
-                    </li>
-
-                    
-                        <li><a href="#" class="opcion"></a>Nosotros</li>
-                    </a>
-                    
-                        <li><a href="#" class="opcion"></a>Contacto</li>
-                    </a>
-                </ul>
-            </nav>
-
-        </header>
-
-        <div class="fondo">
-            <img src="imagen 1.png" alt="Fondo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="tiendalogo.png" alt="Logo de la tienda" />
         </div>
+        <nav>
+            <div class="categorias">
+                <label for="dropdown-toggle" class="dropdown">Categorías</label>
+                <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle" />
+                <div class="dropdown-content">
+                    <a href="pagina_ropa.html">Ropa</a> <!-- Enlace a la página de ropa -->
+                    <a href="pagina_electrodomesticos.html">Electrodomésticos</a> <!-- Enlace a la página de electrodomésticos -->
+                    <a href="pagina_hogar.html">Hogar</a> <!-- Enlace a la página de hogar -->
+                </div>
+            </div>
+            <div class="favoritos">
+                <a href="pagina_favoritos.html">
+                    <img src="me gusta.png" alt="Favoritos" />
+                </a>
+            </div>
+            <div class="carrito">
+                <a href="pagina_carrito.html">
+                    <img src="carrito.png" alt="Carrito" />
+                </a>
+            </div>
+        </nav> 
+    </header> 
 
-        <p>Ustedes pueden</p>
+    <!--Banner -->
+    <div class="banner">
+        <div class="banner-content">
+            <h2>¡Descubre nuestras ofertas!</h2>
+            <p class="cta">!Compra ahora¡</p>
+        </div>
+    </div> 
 
-    </body>
+    <!--Productos -->
+    <div class="productos">
+        <div class="producto">
+            <img src="producto1.jfif" alt="Producto 1" />
+            <h3>Vestido "date in Paris"</h3>
+            <p>talla: S 
+                <br>Color: blanco, rojo, negro 
+            </p>
+            <p>Precio: S/. 100.00</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="producto2.jfif" alt="Producto 2" />
+            <h3>Sofa "Vita"</h3>
+            <p>Color: blanco, beige, crema, negro
+                <br>tamaño: 1.50 m largo
+            </p>
+            <p>Precio: S/. 150.00</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="producto3.jfif" alt="Producto 3" />
+            <h3>Lavadora "ProX-Live"</h3>
+            <p>Color: negro
+                <br>tamaño: 1 m alto
+            </p>
+            <p>Precio: S/. 200.00</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+</body>
 </html>
