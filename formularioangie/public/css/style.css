@@ -1,0 +1,92 @@
+/* Estilos generales */  
+body {  
+    font-family: 'Arial', sans-serif;  
+    background-color: #f0f4f8; /* Suave cambio para un fondo más amigable */  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    margin: 0;  
+}  
+
+/* Estilos para el contenedor del formulario */  
+.form-container {  
+    background-color: #fff;  
+    padding: 40px; /* Ampliar el padding */  
+    border-radius: 15px;  
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Aumentar la sombra */  
+    width: 100%;  
+    max-width: 480px; /* Límite de ancho mejorado */  
+}  
+
+/* Estilos para el título del formulario */  
+h1 {  
+    color: #3a3a3a; /* Cambiar el color para más contraste */  
+    text-align: center;  
+    font-size: 28px; /* Ajustar el tamaño de la fuente */  
+    margin-bottom: 20px; /* Espacio debajo del título */  
+}  
+
+/* Estilos para los grupos de entrada de datos */  
+.input-group {  
+    margin-bottom: 20px; /* Espacio inferior aumentado */  
+}  
+
+/* Estilos para las etiquetas de los campos de entrada */  
+label {  
+    font-size: 16px;   
+    color: #555; /* Color de texto más suave */  
+    margin-bottom: 5px;  
+    display: block;  
+}  
+
+/* Estilos para los campos de entrada y el área de texto */  
+input, textarea {  
+    width: calc(100% - 10px);  /* Ajustar ancho para incluir margen */  
+    padding: 14px; /* Ampliar el padding */  
+    border: 2px solid #c9c9c9; /* Color del borde más suave */  
+    border-radius: 5px;  
+    font-size: 16px;  
+    transition: border-color 0.3s, box-shadow 0.3s; /* Añadir transición de sombra */  
+    margin-right: 10px; /* Margen derecha para espacio adicional */  
+}  
+/* Estilos para los campos de entrada y el área de texto cuando están enfocados */  
+input:focus, textarea:focus {  
+    border-color: #66cfff;  
+    box-shadow: 0 0 5px rgba(102, 207, 255, 0.5); /* Añadir sombra azul al enfocarse */  
+    outline: none;  
+}  
+
+/* Estilos para el área de texto */  
+textarea {  
+    resize: vertical;  
+    height: 150px;  
+
+}  
+
+/* Estilos para el botón de envío */  
+.submit-btn {  
+    width: 100%;  
+    padding: 14px;  
+    background-color: #66cfff;  
+    color: white;  
+    border: none;  
+    border-radius: 5px;  
+    font-size: 18px;  
+    cursor: pointer;  
+    transition: background-color 0.3s, transform 0.2s; /* Añadir efectos al botón */  
+}  
+
+/* Estilos para el botón de envío cuando se pasa el mouse sobre él */  
+.submit-btn:hover {  
+    background-color: #58b8e4; /* Color al pasar el mouse */  
+    transform: scale(1.02); /* Efecto de aumento */  
+}  
+
+/* Estilos para el mensaje de error */  
+.error-message {  
+    color: #ff3333;  
+    font-size: 14px;  
+    margin-top: 10px;  
+    display: none; /* Iniciar oculto */  
+} 
